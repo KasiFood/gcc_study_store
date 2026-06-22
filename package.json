@@ -1,0 +1,11 @@
+{
+  "name": "gcc-study-hub-secure",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
