@@ -19,7 +19,7 @@ The completed flow is:
 - Paid files: `private-downloads/`
 - Free files: `free-downloads/`
 
-The exact paid filenames are defined in `netlify/functions/products.js`. Keep the filenames aligned with that file. The public product pages do not contain paid file paths.
+The exact paid filenames are defined in `netlify/functions/products.mjs`. Keep the filenames aligned with that file. The public product pages do not contain paid file paths.
 
 ## Deploy to Netlify
 
@@ -50,7 +50,7 @@ After adding variables, redeploy without cache.
 ## Before taking a live payment
 
 1. Add every paid guide and bundle to `private-downloads/`.
-2. Confirm the product titles, prices, and filenames in `netlify/functions/products.js`.
+2. Confirm the product titles, prices, and filenames in `netlify/functions/products.mjs`.
 3. Use sandbox credentials with `PAYFAST_LIVE=false` first.
 4. Complete a sandbox payment and verify that the button appears only after `/api/payfast-itn` records the payment.
 5. Switch to live credentials and `PAYFAST_LIVE=true` only when the test works.
